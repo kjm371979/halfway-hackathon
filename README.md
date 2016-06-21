@@ -1,1 +1,1 @@
-"# halfway-hackathon" 
+# halfway-hackathon
