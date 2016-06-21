@@ -2,9 +2,474 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Cars</title>
+    <title>Super Sports Cars</title>
+    <style>
+
+    /*Body Structure*/
+    header {
+      width: 100%;
+      margin: 0 auto;
+      position: relative;
+      padding: 20px 0;
+      border-bottom: 1px solid red;
+      margin-bottom: 20px;
+    }
+
+    .logo {
+      font-size: 30px;
+      color: blue;
+    }
+
+    body {
+      background-color: black;
+      color: cyan;
+      font: 16px/25px;
+      font-family: "Goudy Old Style",Garamond,"Big Caslon","Times New Roman",serif;
+    }
+
+    hr {
+      background-color: lime;
+      border: 0px;
+      color: lime;
+      height: 1px;
+      margin-bottom: 20px;
+    }
+
+    nav ul {
+      margin: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+      font-size: 16px;
+      line-height: 28px;
+      color: red;
+    }
+
+    nav ul li a {
+      color: yellow;
+      text-decoration: none;
+    }
+
+    nav ul li a:hover{
+      color: mistyrose;
+      text-decoration: underline;
+    }
+
+    .container {
+      position: relative;
+      text-align: left;
+      width: 960px;
+      max-width: 90%;
+      margin: 0 auto;
+    }
+
+    footer {
+      border-top:1px solid red;
+      font-size:12px;
+      line-height:26px;
+      width: 100%
+      color:mistyrose;
+    }
+
+    footer a {
+      color:orchid;
+    }
+
+    footer a:hover {
+      color:hotpink;
+    }
+
+    footer ul li {
+      display:inline;
+      list-style:none;
+      padding-left:20px;
+    }
+
+
+    /* Text Setting */
+    h1 {
+      font-size: 30px;
+      line-height: 36px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 24px;
+      line-height: 20px;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      font-size: 20px;
+      line-height: 20px;
+      margin-bottom: 10px;
+    }
+    h4 {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 10px;
+    }
+    h5 {
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 20px;
+    }
+
+    h6 {
+      font-size: 12px;
+      line-height: 20px;
+      margin-bottom: 20px;
+    }
+
+    h1,h2,h3,h4,h5,h6 {
+      color: orange;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    .float-left {
+      float: left;
+    }
+
+    .float-right {
+      float: right;
+    }
+
+    img.float-left {
+      float: left;
+      margin: 0 20px 20px 0;
+    }
+
+    img.float-right {
+      float: right;
+      margin: 0 0 20px 20px;
+    }
+
+    img.center {
+      margin: 0 auto;
+      display: block;
+    }
+
+    .text-left {
+      text-align: left;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .text-right {
+      text-align: right;
+    }
+
+    .text-justify {
+      text-align: justify;
+    }
+
+    /* Grid */
+    .row {
+      width: 100%;
+      margin:0 auto 20px auto;
+      display:inline-block;
+      position:relative;
+    }
+
+    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+      float: left;
+      margin-right: 2%;
+    }
+
+    .row .col-1:last-child, .row .col-2:last-child, .row .col-3:last-child, .row .col-4:last-child, .row .col-5:last-child, .row .col-6:last-child, .row .col-7:last-child, .row .col-8:last-child, .row .col-9:last-child, .row .col-10:last-child, .row .col-11:last-child, .row .col-12:last-child { margin-right: 0; }
+    .row:after, .clearfix:after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden;
+    }
+
+    .col-1  {
+      width: 6%;
+    }
+
+    .col-2  {
+      width: 15%;
+    }
+    .col-3  {
+      width: 23.5%;
+    }
+
+    .col-4  {
+      width: 32%;
+    }
+
+    .col-5  {
+      width: 40%;
+    }
+
+    .col-6  {
+      width: 49%;
+    }
+
+    .col-7  {
+      width: 56.5%;
+    }
+
+    .col-8  {
+      width: 66%;
+    }
+
+    .col-9  {
+      width: 74%;
+    }
+
+    .col-10 {
+      width: 82.5%;
+    }
+
+    .col-11 {
+      width: 91%;
+    }
+
+    .col-12 {
+      width: 100%;
+    }
+
+    </style>
   </head>
   <body>
 
+    <div class="container">
+
+      <header>
+        <a class="logo">Super Sports Cars</a>
+        <nav class="float-right">
+          <ul>
+            <li><a href="https://en.wikipedia.org/wiki/Lamborghini">History</a></li>
+            <li><a href="http://www.lamborghini.com/en/home/">Website</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="row">
+
+        <div class="col-12">
+          <img class="center" src="http://www.agromachinagroup.com/SAIT/pictures/Partners/logo_Lamborghini%20copy.png" height="100px" width="100%" alt="Lamborghini" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-7">
+          <h1 style="text-align:center">Lamborghini Huracán</h1>
+          <hr>
+          <img class="center" src="http://www.lambocars.com/images/lambonews/2014_huracan_virtual_tuning_2.jpg" height="400px" width="540px" alt="Huracan" />
+            <p>
+              The <b>Lamborghini Huracán</b> is a super sports car built by Lamborghini,
+              replacing their sales leader and most produced car, the Lamborghini
+              Gallardo. The Huracán made its auto show debut at the March 2014
+              Geneva Auto Show, and was released in the second quarter of 2014.
+              <br>
+              The Huracán's name (huracán being the Spanish word for hurricane)
+              is inspired by a Spanish fighting bull, similar to various other
+              Lamborghini car models. Huracán was a bull known for its courage
+              that fought in 1879. Also Huracan is the Mayan god of wind, storm
+              and fire.
+            </p>
+            <p>
+              The Huracán maintains the 5.2 L naturally aspirated Audi/Lamborghini
+              V10 engine from the Gallardo, tuned for 610 PS (449 kW; 602 hp).
+              To ensure its balance and performance, the car is mid-engined. The
+              V10 has both direct fuel injection and multi-point fuel injection.
+              It combines the benefits of both of these systems; it is the first
+              time this combination is used in a V10. To increase its efficiency
+              the Huracán's engine also includes a start-stop system.
+            </p>
+            <p>
+              The Huracán's top speed is over 202 mph. It can accelerate from
+              0 to 60 mph in 2.5 seconds and from 0 to 120 mph in 8.1 seconds.
+              With a dry weight of 3,135 lb, the Huracán has a power-to-weight
+              ratio of 5.20 lb per horsepower. The Huracán has electronically
+              controlled all-wheel drive, which aims to increase the traction on
+              various surfaces and the overall performance of the car.
+            </p>
+            <img class="center" src="http://www.zercustoms.com/news/images/Lamborghini/th1/Vorsteiner-Lamborghini-Huracan-Verona-2.jpg" height="400px" width="540px" alt="Huracan" />
+            <p>
+              The car has a 7-speed dual clutch transmission, Lamborghini's new
+              'Doppia Frizione' (Dual Clutch) gearbox. The transmission performs
+              differently depending on the mode the driver has selected. The
+              Huracán will only be available with automatic transmission; manual
+              will not be offered. The Huracán also has a magnetically controlled
+              suspension system. It utilizes magnetorheological dampers to very
+              quickly change how the suspension acts, ensuring performance as
+              well as usability. The Huracan has various components in common
+              with the next generation Audi R8. This is due to both of the cars'
+              utilization of Volkswagen Group sportscar technology.
+            </p>
+            <p>
+              Various aspects of the Huracán are technologically advanced. The
+              car has full LED headlamps, which ensures higher contrast in night
+              conditions. Also, the Huracán has optional "Lamborghini Dynamic
+              Steering" (LDS) to add to the standard power steering. The Dynamic
+              Steering changes the steering performance from normal, comfortable
+              steering to a racing feeling. The main control for changing the car's
+              performance according to driving conditions is the mode selector
+              ANIMA (Adaptive Network Intelligent Management). ANIMA controls the
+              engine, the transmission, LDS, the all-wheel drive, magnetorheological
+              suspension, and the electronic stability control. The Lamborghini
+              Piattaforma Inerziale (LPI) carries out precise measurements of
+              the vehicle movements using on board sensors (3 accelerometers and
+              3 gyroscopes) linked to ANIMA via high-speed FlexRay CAN bus. The
+              driver can select street, sport, or race mode to alter how systems
+              like the engine or transmission respond while driving. Depending
+              on what mode is selected, even engine sound is different.
+            </p>
+          <img class="center" src="http://sportcarlist.com/wp-content/uploads/2015/12/2016-Lamborghini-Huracan-LP580-2-Interior.jpg" height="400px" width="540px" alt="Huracan" />
+           <p>
+              The Huracán features various interior options for more comfort
+              inside the car. It features a choice for full electric control and
+              heating of the sport seats in addition to the standard lengthwise
+              alignment and electric backrest. The car also has an optional
+              navigation system and leather upholstering. The Huracán is one of
+              the first sports cars moving infotainment out of the center stack:
+              Lamborghini Infotainment System. The result: a display that lets
+              the driver decide what they want to see. It is the first vehicle
+              to use the 12.3 inch TFT virtual cockpit from parent company Audi,
+              which is available with high-definition (1440 x 540) 3D computer
+              graphics, Bluetooth, Google Earth GPS navigation and Multi Media
+              Interface-like menu and dashboard controls, all powered by Nvidia
+              Tegra 3.
+            </p>
+            <img class="center" src="https://blogs.nvidia.com/wp-content/uploads/2014/03/display.jpg" height="400px" width="540px" alt="Huracan" />
+            <p>
+              The Huracán's chassis is assembled by Lamborghini's parent company
+              Audi in Neckarsulm, Germany. It is transported to the Lamborghini
+              headquarters in Sant'Agata Bolognese, Italy, where the final
+              assembly occurs. Within the first month of Lamborghini Huracán
+              LP 610-4 preview period, 700 orders of the vehicle were obtained.
+              Before the official launch, Lamborghini registered more than 1,000
+              orders of the Huracán LP 610-4.
+            </p>
+            <p>
+              The Huracán LP 610-4 Coupé (in Midas yellow body colour) appeared
+              in Forza Horizon 2 as the "hero car", where the car was featured
+              in the box art cover for both the Xbox One and Xbox 360 editions
+              of the game. At PAX East 2016, the Blizzard game "Overwatch"
+              collaborated with Uber to perform "Uberwatch", which took event
+              goers and VIP's on short rides through the area surrounding the
+              BCEC, in cars themed after as well as driven by stunt performers
+              cosplaying as various characters from the game. Lamborghini
+              Huracáns and Aventadors were wrapped in liveries themed after the
+              character "Tracer", with 3 cars (two Huracans and one Aventador)
+              being driven on the street, while the remaining Aventador was on
+              display inside the convention.
+            </p>
+        </div>
+        <div class="col-5">
+          <h1 style="text-align:center">Huracán Models</h1>
+          <hr>
+          <h3>Huracán LP 610-4 Coupe (2014-)</h3>
+          <p>
+            Changes from Gallardo included full LED illumination, a 12.3 inch
+            full-colour TFT instrument panel, Fine Nappa leather and Alcantara
+            interior upholstery, redesigned dashboard and central tunnel,
+            Iniezione Diretta Stratificata (IDS, essentially an adapted version
+            of parent Audi's Fuel Stratified Injection) direct and indirect
+            gasoline injections, engine Stop & Start technology, EU6 emissions
+            regulation compliance, Lamborghini Doppia Frizione (LDF) 7-speed dual
+            clutch transmission with 3 modes (STRADA, SPORT and CORSA), 20 inch
+            wheels, carbon-ceramic brake system, optional Lamborghini Dynamic
+            Steering variable steering system and MagneRide electromagnetic
+            damper control. The Huracán is comparable to the McLaren 650S and
+            the Ferrari 458 (as well as its successor, the 488 GTB). The price
+            of the Huracán with extra options added reaches to over US$320,000,
+            or £200,000. The base price for the Huracán in the United States is
+            US$241,945, and around £180,720 in the UK. Extra options that
+            increase the price of the car include interior enhancements, special
+            paint schemes, improved suspension, and a lifting system, as well as
+            multiple components optionally available in carbon fiber, rather
+            than aluminium. Taiwan models went on sale for NT$15,080,000. In
+            early 2015, the Huracán appeared on the motoring magazine Top Gear.
+            It got a neutral review from Richard Hammond who said that it was
+            too tame to be a "proper Lamborghini." However, it got around the
+            Top Gear test track in 1:15.8 which is faster than any other
+            Lamborghini to go around the track to date, including the Aventador.
+          </p>
+          <img class="center" src="http://www.carreviewplaza.com/wp-content/uploads/2015/05/2015-Lamborghini-Huracan-1024x680.jpg"height="200px" width="400px" alt="Huracan coupe" />
+          <h3>Huracán LP 610-4 Spyder (2016–)</h3>
+          <p>
+            A convertible variant of the Huracán LP 610-4 was revealed at the
+            Frankfurt Motor Show on September 14, 2015. The 5.2-liter
+            naturally-aspirated V10 engine is the same as seen in the coupé,
+            and it develops 610 PS (449 kW; 602 hp). 0 to 62 mph takes 3.4 seconds
+            and the top speed is 201 mph. UK deliveries will begin in early 2016.
+          </p>
+          <img class="center" src="https://i.kinja-img.com/gawker-media/image/upload/s--a05VWVRs--/c_scale,fl_progressive,q_80,w_800/1430419195449967683.jpg"height="200px" width="400px" alt="Huracan spyder" />
+          <h3>Huracán LP 620-2 Super Trofeo (2014–)</h3>
+          <p>
+            The Huracán LP 620-2 Super Trofeo is a rear wheel drive only race
+            car version of Lamborghini Huracán coupe for the 2015 Lamborghini
+            Blancpain Super Trofeo Series (Europe, Asia and North America). The
+            vehicle was unveiled at the "Piero Taruffi" Vallelunga (ITA) circuit.
+          </p>
+          <img class="center" src="http://indianautosblog.com/wp-content/uploads/2014/08/Lamborghini-Huracan-LP-620-2-Super-Trofeo-front-three-quarter.jpg"height="200px" width="400px" alt="Huracan super Trofeo" />
+          <h3>Huracán LP 580-2</h3>
+          <p>
+            The Huracán LP 580-2 is a lower cost derivative of the Huracán 610-4
+            that differs mostly in having an engine tuned only to 580 PS and only
+            driving the rear 2 wheels. It has the same 5.2-liter V-10 engine as
+            the 610-4, except tuned to 572 hp (580 PS; 427 kW) and 533 N·m (393 lb·ft).
+            Lamborghini claims it will do 0–62 mph in 3.4 seconds and 0–124 mph
+            in 10.1 seconds. The top speed is claimed to be as high as 200 mph.
+            It also features slight visual differences to the LP610-4 variant of
+            the car - with a different front fascia and a larger air vent at the
+            rear of the car. The seven-speed dual-clutch transmission is the
+            same as used in the 610-4. The base level 580-2 costs US$201,100,
+            about US$40,000 less than the base level 610-4.
+          </p>
+          <img class="center" src="http://www.lambocars.com/images/lambonews/huracan_lp580_2_shades_14.jpg"height="200px" width="400px" alt="Huracan LP" />
+          <h3>Huracán LP 610-4 Avio</h3>
+          <p>
+            The Huracán LP 620-2 Super Trofeo is a rear wheel drive only race
+            car version of Lamborghini Huracán coupe for the 2015 Lamborghini
+            Blancpain Super Trofeo Series (Europe, Asia and North America). The
+            vehicle was unveiled at the "Piero Taruffi" Vallelunga (ITA) circuit.
+          </p>
+          <img class="center" src="http://www.evocars-magazin.de/wp-content/uploads/2004/10/Lamborghini-Huracan-11.jpg"height="200px" width="400px" alt="Huracan Avio" />
+          <h3>Huracán LP 610-4 Polizia</h3>
+          <p>
+            The Huracán LP 610-4 Polizia is the official police car version of
+            the Lamborghini specifically produced for the Italian State Police,
+            after the two Gallardos used by the Polizia Stradale were destroyed
+            in car crashes. This model sports various features not included in
+            the civilian 610-4 Coupe, such as blue Polizia body colour, white
+            stripes and lettering following the Huracán's dynamic design language,
+            a video system positioned in the centre of the cabin with a camera
+            fitted next to the rear view mirror, a computer, recording equipment
+            behind the seats, a Proof Video Data System, gun holster, police
+            radio equipment, a Paletta (the traditional hand-held stop sign used
+            to advice motorists and traffic offenders to pull over), a removable
+            screen, a refrigeration system at the luggage compartment in the
+            front of the vehicle, a defibrillator, and a police beacon with blue
+            LEDs around the base and white LED signals on the front, sides and
+            rear of the light's aluminium shell.
+          </p>
+          <img class="center" src="http://icdn-5.motor1.com/images/mgl/WojRj/s1/2014-512450-lamborghini-huracan-with-polizia-livery1.jpg"height="200px" width="400px" alt="Huracan Polizia" />
+        </div>
+
+      </div>
+
+            <footer>
+              Halfway Hackathon
+              <a class="float-right">Kenny</a><br>
+              <a class="float-right">Courtnee</a><br>
+              <a class="float-right">Rose</a><br>
+              <a class="float-right">Tanner</a><br>
+            </footer>
+
+    </div>
   </body>
 </html>
